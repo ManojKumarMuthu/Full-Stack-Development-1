@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Full-Stack-Development-1
 Week 6 - Full Stack Development
 
@@ -22,3 +23,6 @@ Make sure to create a .env file.  You'll need to setup your credentials:
 </ul>
 
 ////////////////////////////////////////////////
+=======
+# Full-Stack-Development-1
+>>>>>>> aee83c79a749d55bb0f699a0067f81bc8bf342d2
