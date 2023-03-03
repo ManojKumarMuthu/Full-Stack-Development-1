@@ -818,8 +818,8 @@
 
 									<div class="row">
 											<div class="col-md-4">
-												<label for="name">Full Name *</label>
-												<input id="name" required type="text" value="" class="form-control" name="contact[name][required]">
+												<label for="full_name">Full Name *</label>
+												<input id="full_name" required type="text" value="" class="form-control" name="contact[full_name][required]">
 											</div>
 											<div class="col-md-4">
 												<label for="email">E-mail Address *</label>
@@ -827,27 +827,27 @@
 											</div>
 											<div class="col-md-4">
 												<label for="phone">Phone</label>
-												<input id="phone" type="text" value="" class="form-control" name="contact[phone]">
+												<input id="phone" required type="text" value="" class="form-control" name="contact[phone][required]">
 											</div>
 									</div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="company_name">Company Name *</label>
-                                            <input id="name" required type="text" value="" class="form-control" name="contact[name][required]">
+                                            <input id="company_name" required type="text" value="" class="form-control" name="contact[company_name][required]">
                                         </div>
                                         <div class="col-md-6">
                                             <label for="project_name">Project Name *</label>
-                                            <input id="project_name" required type="text" value="" class="form-control" name="contact[name][required]">
+                                            <input id="project_name" required type="text" value="" class="form-control" name="contact[project_name][required]">
                                         </div>
                                     </div>
 									<div class="row">
 											<div class="col-md-6">
-                                                <label for="project_description">Project Description *</label>
-												<input id="project_description" required type="text" value="" class="form-control" name="contact[subject][required]">
+                                                <label for="project_desc">Project Description *</label>
+												<input id="project_desc" required type="text" value="" class="form-control" name="contact[project_desc][required]">
 											</div>
 											<div class="col-md-6">
 												<label for="department">Department</label>
-												<select id="department" class="form-control pointer" name="contact[department]">
+												<select id="department" class="form-control pointer" name="contact[department][required]">
 													<option value="">--- Select ---</option>
 													<option value="Marketing">Commercial</option>
 													<option value="Webdesign">Residential</option>
@@ -857,14 +857,14 @@
 									<div class="row">
 											<div class="col-md-12">
 												<label for="message">Message *</label>
-												<textarea id="message" required maxlength="10000" rows="8" class="form-control" name="contact[message]"></textarea>
+												<textarea id="message" required maxlength="10000" rows="8" class="form-control" name="contact[message][required]"></textarea>
 											</div>
 									</div>
 									<div class="row">
 											<div class="col-md-12">
-												<label for="attachment">File Attachment</label>
+												<label for="file">File Attachment</label>
 												<!-- custom file upload -->
-												<input id="attachment" class="custom-file-upload" type="file" name="contact[attachment]"  data-btn-text="Select a File" />
+												<input id="file" class="custom-file-upload" required type="file" name="contact[file][required]"  data-btn-text="Select a File" />
 												<small class="text-muted block">
                                                     Max file size: 10Mb (zip/pdf/jpg/png)
                                                 </small>
@@ -875,7 +875,7 @@
 
 								<div class="row">
 									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-check"></i> SEND MESSAGE</button>
+										<button id ="submit" type="submit" class="btn btn-primary btn-lg"><i class="fa fa-check"></i> SEND MESSAGE</button>
 									</div>
 								</div>
 							</form>
@@ -1037,6 +1037,8 @@
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
 		
+		<!-- VALIDATOR -->
+		<script src="https://unpkg.com/validator@latest/validator.min.js"></script>
 
 		<!-- REVOLUTION SLIDER -->
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
