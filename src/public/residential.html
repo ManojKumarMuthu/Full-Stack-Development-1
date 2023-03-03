@@ -24,6 +24,9 @@
 		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 
+		<!-- AGENTS CSS -->
+		<link href="assets/css/residential.css" rel="stylesheet" type="text/css" />
+
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
@@ -375,37 +378,6 @@
 			</section>
 			<!-- /PARALLAX -->
 
-			<!-- AGENTS -->
-
-			<section id="agents" style="color: rgb(10, 101, 160); background-color: black; text-decoration: solid;">
-				<div>
-					<label for="sortselect">Sort by:</label>
-					<select id="sortselect" style="color: #A94545; background-color: black; text-decoration: solid;">
-						<option value="select">--- Select ---</option>
-						<option value="first_name">First Name</option>
-						<option value="last_name">Last Name</option>
-					</select>
-				
-					<label for="sortorder">Order:</label>
-					<select id="sortorder" style="color: #A94545; background-color: black; text-decoration: solid;">
-						<option value="select">--- Select ---</option>
-						<option value="ascending">Ascending</option>
-						<option value="descending">Descending</option>
-					</select>
-					
-					<label for="regionselect">Region:</label>
-					<select id="regionselect" style="color: #A94545; background-color: black; text-decoration: solid;">
-						<option value="select">--- Select ---</option>
-						<option value="north">North</option>
-						<option value="south">South</option>
-					</select>
-				</div>
-				
-				<div id="tableContainer" style="background-color: black; text-decoration: solid;"></div>
-			</section>
-
-
-			<!-- /AGENTS -->
 
 			<!-- TESTIMONIAL -->
 			<section id="rt-testimonial">
@@ -473,6 +445,45 @@
 				</div>
 			</section>
 			<!-- /TESTIMONIAL -->
+
+
+			
+			<!-- AGENTS -->
+
+			<section id="agents" style="color: rgb(10, 101, 160); background-color: black; text-decoration: solid;">
+				
+				<h1>Agent Data</h1>
+				<div>
+					<label for="sortselect">Sort by:</label>
+					<select id="sortselect" style="color: #A94545; background-color: black; text-decoration: solid;">
+						<option value="select">--- Select ---</option>
+						<option value="first_name">First Name</option>
+						<option value="last_name">Last Name</option>
+						<option value="fee">Fee</option>
+						<option value="rating">Rating</option>
+					</select>
+				
+					<label for="sortorder">Order:</label>
+					<select id="sortorder" style="color: #A94545; background-color: black; text-decoration: solid;">
+						<option value="select">--- Select ---</option>
+						<option value="ascending">Ascending</option>
+						<option value="descending">Descending</option>
+					</select>
+					
+					<label for="regionselect">Region:</label>
+					<select id="regionselect" style="color: #A94545; background-color: black; text-decoration: solid;">
+						<option value="select">--- Select ---</option>
+						<option value="north">North</option>
+						<option value="south">South</option>
+						<option value="east">East</option>
+						<option value="west">West</option>
+					</select>
+				</div>
+				
+				<div id="tableContainer" style="background-color: black; text-decoration: solid;"></div>
+			</section>
+
+			<!-- /AGENTS -->
 
 
 			<!-- MODAL -->
