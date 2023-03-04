@@ -12,8 +12,6 @@ submitForm.addEventListener("submit", myFunction);
 function myFunction(event) {
   event.preventDefault(); // Prevent the default form submission behavior
 
-  console.log("myFunction called");
-
   // Get the form data
   const myFormData = {
     full_name: document.getElementById("full_name").value,
